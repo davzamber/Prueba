@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>test</title>
+	<meta charset="utf-8"/>
+	<script>
+
+		var num1=0,num2=0,num3=0,res=0;
+		var msj="";
+		var cual=1;	
+		var operacion=5;
+		
+	  	function n1()
+		{	if (cual==1)
+			{	num1 = (num1*10) + 1;
+				alert(num1);
+			}
+			else if (cual==2)
+			{	num2 = (num2*10) + 1;
+				alert(msj + num2);
+			}
+			else if (cual==3) {
+				num3 = (num3*10) + 1;
+				alert(msj + num3)
+			}
+		}
+		function n2()
+		{	if (cual==1)
+			{	num1 = (num1*10) + 2;
+				alert(num1);
+			}
+			else if (cual==2)
+			{	num2 = (num2*10) + 2;
+				alert(msj + num2);
+			}
+			else if (cual==3) {
+				num3 = (num3*10) + 2;
+				alert(msj + num3)
+			}
+		}
+		function n3()
+		{	if (cual==1)
+			{	num1 = (num1*10) + 3;
+				alert(num1);
+			}
+			else if (cual==2)
+			{	num2 = (num2*10) + 3;
+				alert(msj + num2);
+			}
+			else if (cual==3) {
+				num3 = (num3*10) + 3;
+				alert(msj + num3)
+			}
+		}
+
+		function n4()
+		{	if (cual==1)
+			{	num1 = (num1*10) + 4;
+				alert(num1);
+			}
+			else if (cual==2)
+			{	num2 = (num2*10) + 4;
+				alert(msj + num2);
+			}
+			else if (cual==3) {
+				num3 = (num3*10) + 4;
+				alert(msj + num3)
+			}
+		}
+
+		function nx()
+		{	msj = num1+' x ';
+			cual=2;
+			operacion=1;
+			alert(msj);
+		}
+		
+		function ns()
+		{	msj = num1+' + ';
+			cual=2;
+			operacion=2;
+			alert(msj);
+		}
+		function nr()
+		{	msj = num1+' - ';
+			cual=2;
+			operacion=3;
+			alert(msj);
+		}
+		function nd()
+		{	msj = num1+' / ';
+			cual=2;
+			operacion=4;
+			alert(msj);
+		}
+		
+
+		
+		function dx()
+		{	msj = num1+' x ';
+			cual=3;
+			operacion=1;
+			alert(msj);
+		}
+		
+		function ds()
+		{	msj = num1+' + ';
+			cual=3;
+			operacion=2;
+			alert(msj);
+		}
+		function dr()
+		{	msj = num1+' - ';
+			cual=3;
+			operacion=3;
+			alert(msj);
+		}
+		function dd()
+		{	msj = num1+' / ';
+			cual=3;
+			operacion=4;
+			alert(msj);
+		}
+		
+		
+		
+		/* func without touch */
+		function ni()
+		{	if (operacion==1)
+				res = num1 * num2 * num3;
+			else if (operacion==2)
+				res = num1 + num2 + num3;
+			else if (operacion == 3)
+				res = num1 - num2 - num3;
+			else if (operacion==4)
+				res = num1 / num2 / num3;
+			alert(msj+num2+' '+num3+" = "+res);
+		}
+
+		function inicio()
+		{
+			document.getElementById("p2").onclick=n2;
+			document.getElementById("p1").onclick=n1;
+			document.getElementById("p3").onclick=n3;
+			document.getElementById("p4").onclick=n4;
+			document.getElementById("px").onclick=nx;
+			document.getElementById("ps").onclick=ns;
+			document.getElementById("pr").onclick=nr;
+			document.getElementById("pd").onclick=nd;
+			document.getElementById("pi").onclick=ni;
+
+			document.getElementById("d2").onclick=n2;
+			document.getElementById("d1").onclick=n1;
+			document.getElementById("d3").onclick=n3;
+			document.getElementById("d4").onclick=n4;
+			document.getElementById("dx").onclick=nx;
+			document.getElementById("ds").onclick=ns;
+			document.getElementById("dr").onclick=nr;
+			document.getElementById("dd").onclick=nd;
+			document.getElementById("di").onclick=ni;
+		}
+
+		window.onload=inicio;
+	</script>
+	</head>
+	<body>
+		<p id="p1">1</p>	
+		<p id="p2">2</p>
+		<p id="p3">3</p>
+		<p id="p4">4</p>
+		<p id="px">*</p>
+		<p id="ps">+</p>
+		<p id="pr">-</p>
+		<p id="pd">/</p>
+		<p id="pi">=</p>
+		<div style="position: absolute;right: 10px;top: 0px;">
+
+		<p id="d1"></p>
+		<p id="d2"></p>
+		<p id="d3"></p>
+		<p id="d4"></p>							
+		<p id="dx">test</p>
+		<p id="ds"></p>
+		<p id="dr"></p>
+		<p id="dd"></p>
+		<p id="di"></p>
+
+		</div>
+	</body>
+</html>
